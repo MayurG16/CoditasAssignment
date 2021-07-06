@@ -14,22 +14,20 @@ public class DecimalToBinaryConversion {
 
 	}
 	
-	public static void decimalToBinaryConversion(int decimalNumber)
-	{
+	public static void decimalToBinaryConversion(int decimalNumber) {
 
-		long binaryNumber=0;
-		int reminder,temp=1;
-		
-		while(decimalNumber!=0)
-		{
-			reminder = decimalNumber%2;
-			binaryNumber = binaryNumber + reminder*temp;
-			decimalNumber = decimalNumber/2;
+		long binaryNumber = 0;
+		int reminder, temp = 1;
+
+		while (decimalNumber != 0) {
+			reminder = decimalNumber % 2;
+			binaryNumber = binaryNumber + reminder * temp;
+			decimalNumber = decimalNumber / 2;
 			temp = temp * 10;
-			
+
 		}
-		
-		System.out.println("Conversion of Decimal number to Binary is "+ binaryNumber);
+
+		System.out.println("Conversion of Decimal number to Binary is " + binaryNumber);
 	}
 
 }
